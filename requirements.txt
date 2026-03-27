@@ -1,0 +1,13 @@
+xgboost
+pandas
+scikit-learn
+shap
+matplotlib
+seaborn
+jupyter
+statsmodels
+fredapi
+requests
+openpyxl
+python-dotenv
+numpy
