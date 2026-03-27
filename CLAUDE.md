@@ -34,7 +34,7 @@ Kernthese: Top-Down-Managementziele ohne Datenbasis fuehren zu Overplanning.
 
 ## Coding-Konventionen
 
-- Kommentare auf Deutsch
+- Kommentare auf Englisch
 - Variablennamen auf Englisch
 - Keine hardcodierten API-Keys, immer .env verwenden
 - pip install immer mit --break-system-packages
