@@ -1,7 +1,6 @@
 # ML Revenue Forecasting – Dokumentation für die Präsentation
 
 > **Zielgruppe:** Diese Dokumentation erklärt das Forecasting-Modell ohne Python- oder ML-Vorkenntnisse.
-> Sie können dieses Dokument als Spickzettel für Ihr Gespräch mit dem Chef verwenden.
 
 ---
 
