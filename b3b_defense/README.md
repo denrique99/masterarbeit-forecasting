@@ -10,8 +10,6 @@ where the company has no historical footprint — the US defense sector.
 
 - **Target variable:** ADEFNO (Manufacturers' New Orders: Defense Capital Goods), in USD millions — absolute level, not differenced, to keep the result interpretable
 - **ML task:** Forecast the external market volume; market share is a management input in SAC
-- **Formula:** `Segment_Forecast = ML_Market_Volume_ADEFNO × Management_Market_Share`
-- **Market share scenarios (SAC parameters):** Conservative 0.02% / Realistic 0.05% / Optimistic 0.10%
 
 ## Notebooks
 
