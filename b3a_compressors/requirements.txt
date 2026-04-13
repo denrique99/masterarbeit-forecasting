@@ -6,7 +6,6 @@ matplotlib
 seaborn
 jupyter
 statsmodels
-fredapi
 requests
 openpyxl
 python-dotenv
