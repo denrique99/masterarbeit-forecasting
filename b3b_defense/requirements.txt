@@ -9,4 +9,5 @@ statsmodels
 requests
 openpyxl
 python-dotenv
+anthropic
 numpy
