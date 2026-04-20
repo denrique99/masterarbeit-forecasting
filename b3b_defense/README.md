@@ -32,6 +32,7 @@ documentation of A&D supply chain lead times "up to two years").
 | 04 | `04_xgboost_training.ipynb` | TimeSeriesSplit training, metrics (MAE/RMSE/sMAPE/WMAPE), model export |
 | 05 | `05_shap_analysis.ipynb` | SHAP beeswarm, importance bar chart, waterfall for last observation |
 | 06 | `06_forecast_explainability.ipynb` | Rolling 2026 forecast, market share scenarios, SAC CSV export |
+| 07 | `07_llm_analysis.ipynb` | Claude-powered macroeconomic narrative: data-grounded interpretation of the 2026 forecast, KPI table, risk assessment |
 
 ## Data Sources
 
@@ -59,7 +60,9 @@ density remains quarterly.
 |------|-------------|
 | `macro_features_defense.csv` | Joined monthly series with levels and first differences |
 | `defense_feature_matrix.csv` | Final feature matrix for XGBoost training (lags, rolling windows, calendar) |
-| `defense_forecast_2026_sac.csv` | SAC export: 12 rows (12 months × 1 base scenario), FDEFX SAAR in full USD (billions × 1e9) |
+| `defense_forecast_2026_sac.csv` | SAC export: 12 rows (Jan–Dec 2026), FDEFX SAAR in full USD (billions × 1e9) |
+| `defense_forecast_2026_drivers_sac.csv` | SAC export: long-format SHAP driver breakdown (408 rows = 12 months × 34 entries), SHAP values in USD billions |
+| `defense_analysis_2026.md` | LLM-generated macroeconomic narrative (NB07): forecast interpretation, KPI table, risk assessment |
 
 ## Setup
 
@@ -68,4 +71,4 @@ density remains quarterly.
    ```
    pip install -r requirements.txt --break-system-packages
    ```
-3. Run notebooks in order: 01 → 02 → 03 → 04 → 05 → 06
+3. Run notebooks in order: 01 → 02 → 03 → 04 → 05 → 06 → 07
