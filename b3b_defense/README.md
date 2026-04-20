@@ -1,6 +1,6 @@
 # B3b – Defense Market Potential Forecast
 
-XGBoost-based forecast of the **US Defense Capital Goods market volume** (FRED series ADEFNO).
+XGBoost-based forecast of the **US Defense Capital Goods market volume** (FRED series FDEFX).
 
 This is the **B3 core building block** of the hybrid forecasting system. Unlike the B3-Reference model
 (b3a_compressors), which operates on historical company revenue data, this model addresses a market
@@ -8,8 +8,19 @@ where the company has no historical footprint — the US defense sector.
 
 ## Approach
 
-- **Target variable:** ADEFNO (Manufacturers' New Orders: Defense Capital Goods), in USD millions — absolute level, not differenced, to keep the result interpretable
+- **Target variable:** FDEFX (Federal Defense Consumption Expenditures), in USD millions — realized expenditures, semantically consistent with B1/B2 invoice-based forecasts in SAC. Absolute level, not differenced, to preserve interpretability.
 - **ML task:** Forecast the external market volume; market share is a management input in SAC
+
+### Target Rationale
+
+B1 and B2 forecast invoice-based revenue. For consistent aggregation in SAC Planning, all
+building blocks must represent the same economic quantity. ADEFNO (ordering intent) was
+therefore reclassified from target to leading feature with lags 1–24, allowing the model to
+learn the order-to-bill conversion dynamics data-driven rather than assuming a fixed lead time.
+The 24-month lag window is empirically motivated by the heterogeneous order-to-shipment lead
+times in Defense Capital Goods: ~3–6 months for small arms and ammunition, ~6–12 months for
+communications equipment, ~12–24 months for aircraft and missiles (consistent with AlixPartners
+documentation of A&D supply chain lead times "up to two years").
 
 ## Notebooks
 
@@ -28,14 +39,19 @@ where the company has no historical footprint — the US defense sector.
 
 | File | Series | Frequency | Unit | Role |
 |------|--------|-----------|------|------|
-| `ADEFNO.csv` | FRED ADEFNO | Monthly | USD millions | **Target variable** – defense procurement orders |
-| `IPB52300S.csv` | FRED IPB52300S | Monthly | Index | Feature – defense industrial production capacity |
-| `FDEFX.csv` | FRED FDEFX | **Quarterly** | USD millions | Feature – realized federal defense expenditures |
+| `FDEFX.csv` | FRED FDEFX | **Quarterly** | USD millions | **Target variable** – realized federal defense expenditures |
+| `ADEFNO.csv` | FRED ADEFNO | Monthly | USD millions | Feature – leading indicator (lags 1–24), defense procurement orders |
+| `IPB52300S.csv` | FRED IPB52300S | Monthly | Index | Feature – coincident indicator (lags 1–12), defense industrial production capacity |
 
 **Why three series?** They measure different stages of the same economic pipeline:
-ADEFNO captures *ordering intent*, IPB52300S reflects *production capacity*, and FDEFX tracks
-*realized government spending*. The complementary perspectives reduce collinearity between features.
-FDEFX is forward-filled to monthly frequency in Notebook 02.
+FDEFX tracks *realized government spending* (target), ADEFNO captures *ordering intent*
+(leading feature with lags 1–24 covering the full order-to-shipment spectrum), and
+IPB52300S reflects *production capacity* (coincident feature). The complementary
+perspectives reduce collinearity between features.
+
+FDEFX is forward-filled to monthly frequency in Notebook 02. This disaggregation is a
+deliberate design choice and documented as a model limitation — the effective information
+density remains quarterly.
 
 ### Processed (data/processed/)
 
