@@ -8,7 +8,7 @@ where the company has no historical footprint — the US defense sector.
 
 ## Approach
 
-- **Target variable:** FDEFX (Federal Defense Consumption Expenditures), in USD millions — realized expenditures, semantically consistent with B1/B2 invoice-based forecasts in SAC. Absolute level, not differenced, to preserve interpretability.
+- **Target variable:** FDEFX (Federal Defense Consumption Expenditures), in USD billions (SAAR) — realized expenditures, semantically consistent with B1/B2 invoice-based forecasts in SAC. Absolute level, not differenced, to preserve interpretability.
 - **ML task:** Forecast the external market volume; market share is a management input in SAC
 
 ### Target Rationale
@@ -39,7 +39,7 @@ documentation of A&D supply chain lead times "up to two years").
 
 | File | Series | Frequency | Unit | Role |
 |------|--------|-----------|------|------|
-| `FDEFX.csv` | FRED FDEFX | **Quarterly** | USD millions | **Target variable** – realized federal defense expenditures |
+| `FDEFX.csv` | FRED FDEFX | **Quarterly** | USD billions (SAAR) | **Target variable** – realized federal defense expenditures |
 | `ADEFNO.csv` | FRED ADEFNO | Monthly | USD millions | Feature – leading indicator (lags 1–24), defense procurement orders |
 | `IPB52300S.csv` | FRED IPB52300S | Monthly | Index | Feature – coincident indicator (lags 1–12), defense industrial production capacity |
 
@@ -59,7 +59,7 @@ density remains quarterly.
 |------|-------------|
 | `macro_features_defense.csv` | Joined monthly series with levels and first differences |
 | `defense_feature_matrix.csv` | Final feature matrix for XGBoost training (lags, rolling windows, calendar) |
-| `defense_forecast_2026_sac.csv` | SAC export: 36 rows (12 months × 3 scenarios), ready for import |
+| `defense_forecast_2026_sac.csv` | SAC export: 12 rows (12 months × 1 base scenario), FDEFX SAAR in full USD (billions × 1e9) |
 
 ## Setup
 
