@@ -62,7 +62,7 @@ density remains quarterly.
 | `defense_feature_matrix.csv` | Final feature matrix for XGBoost training (lags, rolling windows, calendar) |
 | `defense_forecast_2026_sac.csv` | SAC export: 12 rows (Jan–Dec 2026), FDEFX SAAR in full USD (billions × 1e9) |
 | `defense_forecast_2026_drivers_sac.csv` | SAC export: long-format SHAP driver breakdown (408 rows = 12 months × 34 entries), SHAP values in USD billions |
-| `defense_analysis_2026.md` | LLM-generated macroeconomic narrative (NB07): forecast interpretation, KPI table, risk assessment |
+| `lllm_defense_analysis_2026.md` | LLM-generated macroeconomic narrative (NB07): forecast interpretation, KPI table, risk assessment |
 
 ## Setup
 
