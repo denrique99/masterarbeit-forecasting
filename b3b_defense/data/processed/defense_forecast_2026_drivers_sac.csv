@@ -407,3 +407,10 @@ Date,Country,Segment,Driver,SHAP_Value_monthly_USD
 202612,US,Defense,is_q4,-25701.7
 202612,US,Defense,base_value,61127024332.68
 202612,US,Defense,prediction,75189880371.09
+999912,US,Defense,Defense_Spending_Level_AVG,13559730450.52
+999912,US,Defense,Defense_Spending_Momentum_AVG,-25195102.10
+999912,US,Defense,Defense_Order_Pipeline_AVG,-20211796.22
+999912,US,Defense,Industrial_Output_AVG,474161723.27
+999912,US,Defense,Seasonality_AVG,-20570351.92
+999912,US,Defense,base_value_AVG,61127024332.68
+999912,US,Defense,prediction_AVG,75094896104.60

@@ -1,0 +1,4 @@
+Model,Monthly_USD_bn,APE_pct
+Naive (carry-forward),96.599,1.0
+XGBoost,75.472,22.6
+Actual (fallback (FRED_API_KEY not set in .env)),97.55,0.0
