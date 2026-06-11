@@ -1,0 +1,71 @@
+Interview-Notizen – IP2
+Datum: Februar 2026
+Profil: Senior FP&A Manager,
+        Berliner E-Commerce-Operations-Scaleup
+        (~EUR 80 Mio. Umsatz, ~520 FTE, VC/Venture-Debt-finanziert)
+        Geschäftsmodell: Software + Fulfillment-Logistik für
+        E-Commerce-Brands; international aufgestellt (DE, FR, IT,
+        ES, UK, NL), Lager in Deutschland und Polen
+
+---
+
+PLANUNGSZYKLUS
+- Jährliches Budget: Start Q3/Q4, ca. 6–8 Wochen vor
+  Board-Meeting (typisch Anfang Dezember)
+- Hybrid: Top-down gibt Management-Richtung (z. B. Ziel 2x
+  Wachstum), Bottom-up rechnen Business Units durch, wie
+  das erreichbar ist
+- Finance als Sparring-Partner zwischen Management und BUs:
+  liefert Past Data, reviewt Bottom-up-Inputs
+- Mehrere Iterationszyklen bis zur Konvergenz (erster Entwurf
+  landet selten am Ziel)
+- Monatlicher Reporting-Cycle: Actuals ca. Mitte/Ende des
+  Folgemonats, direkt gegen Business Plan gehalten
+
+DATENBASIS & METHODIK
+- Stark datengetrieben: Revenue und Kosten auf Basis
+  historischer Entwicklung
+- Revenue-Treiber: Ordervolumen (treibt gesamte P&L)
+- Bekannte Saisonalität wird berücksichtigt (Peak: Black
+  Friday / Weihnachten)
+- Preisgestaltung aktiv steuerbar → gut forecastbar
+- Kostenbasis: historische Trends + bekannte Verhandlungs-
+  ergebnisse mit Partnern (z. B. fixe Mietsteigerungsrate)
+- Operationeller Forecast separat: tägliches Ordervolumen
+  für Lager-Personalplanung (kurzfristig, nicht Budget-Cycle)
+
+TOOLS
+- Google Sheets (~25 Sheets: P&Ls, Input-Daten, „Cockpit"-
+  Sheet mit zentralen Assumptions, die in alle Modelle
+  durchlinken)
+- Rein formelbasiert: SUMIFS, INDEX/MATCH, VLOOKUP etc.
+- Kein ML, kein spezifisches FP&A-Tool, kein SAP/SAC
+- Limitation: Modelle werden zu komplex → Sheets werden
+  langsam, crashen
+- Tool-Upgrade auf dem Radar (nicht kurzfristig geplant)
+- Anforderungen an Folge-Tool: einfachere Daten-
+  manipulation, bessere Visualisierung, mehr Checks,
+  flexible Dashboards je Stakeholder-Perspektive
+
+ABWEICHUNGSMANAGEMENT
+- Monatlich: Actuals vs. Budget
+- Erster Schritt: Gap identifizieren und lokalisieren
+  (Ordervolumen als primärer Treiber)
+- Maßnahmen: Marketing-Investition erhöhen oder
+  Headcount-Anpassungen; profitabilität in % meist
+  stabil (absoluter Effekt durch Volumen)
+
+PROZESS-SCHMERZPUNKTE
+- Zeitdruck: Inputs kommen oft erst in letzten 1–2 Tagen
+  vor Deadline → Review-Cycle startet von vorne
+- Technische Limitation von Google Sheets bei hoher
+  Modellkomplexität
+- Kein dediziertes FP&A-System → manuelle Pflegeaufwände
+
+SZENARIOPLANUNG (HIGHLIGHT)
+- Von IP2 als wertvollste Capability benannt
+- Beispiel: Funding-Runde (Series B) → verschiedene
+  Investment-Szenarien (Headcount, Produkte) → Wirkung auf
+  Profitabilität und Cash-Runway
+- Technisch: Cockpit-Sheet mit Annahmen, die durch das
+  gesamte Modell durchrechnen

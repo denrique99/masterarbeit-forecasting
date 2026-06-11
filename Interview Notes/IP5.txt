@@ -1,0 +1,58 @@
+Interview-Notizen – IP5
+Datum: März 2026
+Profil: Head of FP&A, Data and Corporate Programs,
+        großer deutscher Krankenhauskonzern
+        (~EUR 8,5 Mrd. Umsatz, ~80 Standorte)
+
+---
+
+PLANUNGSZYKLUS
+- 5-Jahres-Planung: Jahr 1 sehr detailliert, Jahre 2–3 mit
+  Wachstumsraten, Jahr 4–5 als Fortschreibung
+- Zeitplan: Vorbereitung ab März, Kick-off ~Juli, Abschluss
+  Ende September, Aufsichtsrat ~November
+- Granularität: bis auf Haus-, Konto- und Fachabteilungsebene;
+  jedes Haus plant für sich, dann Aggregation
+
+DATENBASIS & METHODIK
+- SAP → BW als verlässliche Ist-Datenbasis
+- Planung bottom-up: Ist-Zahlen nehmen, Prämissen setzen,
+  in die Zukunft fortschreiben
+- Makroökonomische Signale fließen ein (Brancheninstitut-
+  Prognosen, Inflation, Gesundheitsnachfrage, regulatorische
+  Faktoren), aber als Prämissen, nicht automatisiert
+- Umsatzplan: Balance aus Markterwartung, Kapitalmarkt-
+  Erwartung und eigener Wachstumsambitiom
+
+FORECASTING
+- 3 unterjährige Forecasts zusätzlich zum Jahresplan
+- Methodik: Delta-Ansatz (Ist vs. Plan + bekannte Neuerungen
+  + Gegenmaßnahmen); ML/algorithmische Komponente für
+  Fallzahl-Forecasts (Arbeitstage, Vergangenheitsdaten),
+  aber nur als Informationsbasis
+- Plan bleibt Plan (Kapitalmarktkommunikation) →
+  Abweichungen erfordern Maßnahmen, keine Plan-Revision
+
+TOOLS
+- SAC: rein für Reporting, nicht für Planung
+- Planung: Excel + BW-Schnittstelle
+- Excel-Verteidigung: maximale Flexibilität in der Endphase,
+  schnelle Anpassbarkeit, jeder kann es bedienen
+- Nachteil Excel: Wissen konzentriert sich am Ende auf
+  kleinen Kreis, kein Standard, Abhängigkeit von
+  individuellen "Makro-Champions"
+
+PROZESS-SCHMERZPUNKTE
+- Planungsprozess ist stark politisch und menschlich:
+  Manager über- oder unterschätzen sich → braucht Erfahrung
+  und Urteilsvermögen, nicht automatisierbar
+- Zeitdruck: Deadline wird immer bis zuletzt ausgereizt
+- Verbesserungswunsch: Management früh einbinden,
+  Deadlines halten, Konflikte minimieren
+
+DATENQUALITÄT ALS KI-ENABLER
+- Zentrales Thema: KI steht und fällt mit Datenqualität
+- Aufräumarbeit wird strukturell vernachlässigt (unattraktiv,
+  wenig Karriererelevanz) – obwohl dort der eigentliche
+  Mehrwert liegt
+

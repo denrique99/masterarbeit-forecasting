@@ -1,0 +1,84 @@
+Interview-Notizen – IP1
+Datum: Januar 2026
+Profil: Senior Consultant, Performance & Restructuring,
+        [Big-Four-Beratung]
+        Fokus: Unternehmen in Krisensituationen;
+        Branchenschwerpunkte wechseln konjunkturell
+        (post-COVID: Luftfahrt/Touristik;
+        aktuell: energieintensive Industrie)
+        Perspektive: externer Berater, der in laufende
+        Planungen eingreift (kein vollständiger Planungszyklus
+        aus Eigenperspektive)
+
+---
+
+PLANUNGSTYPEN IM KRISENKONTEXT
+- Kurzfrist: direkte Liquiditätsplanung (13-Wochen-Forecast)
+- Mittelfrist: integrierte 2–3-Jahres-Planung für Geldgeber
+  (Sanierungsfähigkeit / Kapitalrückführung)
+- Rollierender Forecast: wird als Best Practice eingeführt
+  (monatlich, 12-Monats-Horizont; nach ~6 Monaten schlanker
+  Routineprozess mit hoher Planungsqualität)
+- Gesetzliche Pflichten oft unbekannt: 13-Wochen-
+  Liquiditätsplan + 2-Jahres-Fortbestehensprognose
+
+PLANUNGSZYKLUS (beobachtete Normalpraxis)
+- Ownership: Controlling (unterstützt von Accounting +
+  Treasury)
+- Start: typisch Oktober, Abschluss Ende Januar
+- Ablauf: Vertriebsplanung (Pipeline → Preis × Menge =
+  Umsatz) → Kostenplanung (einfach: Vorjahr fortschreiben;
+  tiefergehend: treiberbasiert je Konto/Buchungsart)
+- Im Krisenkontext: Schnelligkeit vor Qualität
+
+DATENBASIERTHEIT
+- Ernüchternde Einschätzung: die meisten Unternehmen
+  planen wenig datengetrieben
+- Qualität hängt stark von den beteiligten Personen ab,
+  nicht von Unternehmensgröße
+  → große Airlines: teils erschreckend geringe
+    Planungsqualität beobachtet
+  → kleine Unternehmen: teils sehr präzise, treiber-
+    basierte Excel-Modelle
+- Elemente guter Planung: historische Daten (mit Vorbehalt),
+  externe Marktdaten (Wachstum/Schrumpfung des Marktes),
+  Wettbewerbsanalyse (Marktanteil begründen), menschliche
+  Erfahrung und Urteilsvermögen
+- Reine Vergangenheitsfortschreibung unzureichend: sagt
+  nichts über die Zukunft aus
+- Sektorkomplexität: z. B. CO2-Zertifikatspreise
+  (national + international) als kritischer Kostentreiber
+  in energieintensiver Industrie → erfordert dediziertes
+  Monitoring
+
+KI / MACHINE LEARNING
+- Bei keinem Mandanten bisher im Einsatz
+- Krisenunternehmen sind selten Innovations-Vorreiter
+- Kein ML-Einsatz in der Planungspraxis beobachtet
+
+TOOLS
+- Excel universell: alle Unternehmensgrößen, alle Branchen
+- Gründe: günstig, allgemein verständlich, überall lizenziert
+- Ergänzend genutzt: Buchhaltungstools (z. B. LucaNet),
+  aber Excel bleibt immer involviert
+  (Daten aus Tool → Excel-Planung → zurück ins Tool)
+- Firmeneigene Beratungstools vorhanden, aber in der Praxis
+  kaum von Mandanten angenommen
+- Excel-Grenze: Konsolidierung von 20+ Einheiten
+  (Geschwindigkeit, Dateigröße)
+
+ANFORDERUNGEN AN EIN IDEALWERKZEUG
+- Grundsatz: „Shit in, shit out" – Mensch muss Treiber
+  verstehen, Tool kann das nicht ersetzen
+- Gewünschte Funktionen: Formelfehler erkennen,
+  Anomalien flaggen, unbegrenzte Skalierbarkeit
+- Integrierte Planung: einmal sauber aufgesetzt weitgehend
+  automatisiert (nur noch Inputwerte aktualisieren)
+
+PLANUNGSKULTUR (qualitative Einschätzung)
+- Zwei häufige Extremtypen:
+  1. Planung als Formalität: Controller spiegelt Vorjahr
+     + pauschaler Wachstumszuschlag
+  2. Chaotischer Prozess ohne klare Verantwortlichkeiten
+- Planungstreue (Abweichung Plan vs. Actual am Jahresende)
+  wird selten systematisch gemessen oder ausgewertet

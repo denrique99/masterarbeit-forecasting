@@ -1,0 +1,80 @@
+Interview-Notizen – IP6
+Datum: Februar 2026
+Profil: Head of FP&A,
+        Berliner B2B-SaaS-Unternehmen, PE-gebackt
+        (~EUR 90–100 Mio. Umsatz, ~460 FTE)
+        Wachstum von ~EUR 30 Mio. auf ~100 Mio. in 3 Jahren;
+        2 Akquisitionen noch nicht vollständig integriert;
+        PE-Exit-Horizon: ~12–18 Monate
+
+---
+
+ROLLE & AUFGABEN
+- Neu geschaffene Position (seit Oktober, vorher keine
+  dedizierte FP&A-Funktion)
+- Scope: Reporting, Forecasting, Budgetplanung, Business
+  Partnering, M&A-Integration, Cashflow-Aufbau
+- Kernaufgabe: skalierbare FP&A-Prozesse für ein schnell
+  wachsendes Unternehmen aufbauen
+
+PLANUNGSZYKLUS
+- Jahresbudget: Vorbereitung ab September, Excel-basiert;
+  Ausgangspunkt: Jahresabschluss des Vorjahres
+- Quartalsweise Forecasts als „Mini-Budgets": Deep-Dive
+  mit Department Heads, 12-Monats-Rollhorizont
+- Monatliches Monitoring: Actuals vs. Budget
+- Philosophie: Forecast nicht als einmalige Jahresübung,
+  sondern als kontinuierlicher Blick auf nächste 12 Monate
+
+DATENBASIS & METHODIK
+- Revenue zu ~90 % vorhersagbar: Subscription-Modell,
+  bekannte Churn-Raten, kurze Deal-Zyklen (1–4 Monate)
+  → Topline relativ stabil planbar
+- Kosten: ~2/3 Personalkosten (gut steuerbar),
+  ~1/3 Admin-Kosten (Software-Verträge, Contractors)
+- Algorithmus-gestützt nur für Cloud-Infrastrukturkosten
+  ([Cloud-Cost-Forecasting-Tool], AWS-basiert); alle anderen
+  Kosten- und Umsatzpositionen erfahrungs-/urteilsbasiert
+- Starke Datenbasis (Snowflake) vorhanden; KI-Integration
+  in Zukunft vorstellbar, aktuell noch zu früh
+- Headcount-Forecasting mit [Headcount-Planning-Tool]
+  (Berliner Startup, kürzlich eingeführt); deckt ~2/3 der
+  Kosten ab → zentrales Steuerungsinstrument
+
+TOOLS
+- Primär Excel (auch bei früheren Unternehmen bis EUR 1 Mrd.
+  Umsatz Standard gewesen)
+- [Headcount-Planning-Tool]: Headcount Approval +
+  Forecasting, schnell ausrollbar
+- [Cloud-Cost-Forecasting-Tool]: AWS-Kostenprognose
+- Revenue-Forecasting: separates Tool (Name nicht genannt)
+- Evaluiert, aber aktuell nicht eingeführt: zwei spezialisierte
+  FP&A-Tools ([Tool A], [Tool B]); ROI im PE-Exit-Fenster
+  nicht klar genug darstellbar
+
+ABWEICHUNGSMANAGEMENT
+- Budget wird unterjährig nicht angepasst (bleibt fix)
+- Abweichungen werden durch direkte Eingriffe gesteuert
+  (Ausgaben zurückfahren, Hiring stoppen)
+- Starke Kostendisziplin durch PE-Eigentümerschaft
+
+PROZESS-SCHMERZPUNKTE
+- Post-Akquisitions-Integration: Datenbasis noch unvollständig
+  (unklare Cost-Center-Struktur, fehlende Datenqualität)
+- Admin-Kosten schwer zu greifen: kein zentrales Procurement,
+  Contractors/Agencies dezentral gesteuert
+- Forecasting kostet intensive bilaterale Abstimmung mit
+  allen Business Owners (hoher Zeitaufwand)
+- Tool-Investitionen schwierig: kurzer ROI-Horizont durch
+  bevorstehenden PE-Exit hemmt strategische Entscheidungen
+- Skalierungsherausforderung: Prozesse für ein
+  EUR 30-Mio.-Unternehmen funktionieren bei EUR 100 Mio.
+  nicht mehr
+
+GRUNDSÄTZLICHE PERSPEKTIVE
+- Pain Points werden nicht als Tool-Problem gesehen, sondern
+  als normale Begleiterscheinung von Wachstumsphasen
+- Leitprinzip: saubere Datenstruktur und einfache Prozesse
+  wichtiger als Toolwechsel
+- Business-Partnering-Gespräche (face-to-face Challenge
+  der Department Heads) als nicht-substituierbare Kernaktivität

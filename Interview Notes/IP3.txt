@@ -1,0 +1,77 @@
+Interview-Notizen – IP3
+Datum: Februar 2026
+Profil: Financial Controller,
+        mittelgroßes deutsches IT-Dienstleistungsunternehmen
+
+---
+
+ROLLE & AUFGABEN
+- Verantwortlich für: Finanzplanung (GuV, Liquidität),
+  Budgetcontrolling (Abteilungsebene), Soll-Ist-Analysen,
+  Jahresabschluss-Vorbereitung
+- Enge Zusammenarbeit mit Leitung und Bereichsleitern
+  bei Umsatz-, Personal- und Budgetplanung
+- Ergebnis: gesamtheitliche Unternehmensplanung
+
+PLANUNGSZYKLUS
+- Jährliche Gesamtplanung (umfassend)
+- Quartalsweise Planungsaktualisierung (mehr Datenbasis
+  verfügbar, Grundlage für Gesellschafterversammlungen)
+- Monatliches Reporting: Actuals vs. Plan
+
+DATENBASIS & METHODIK
+- Hybrid: Vorjahreswerte als Basis, skaliert auf geplante
+  Mitarbeiterzahl/Volumen; teils individuell (z. B.
+  Fortbildungskosten: jahresspezifischer Bedarf)
+- Umsatzplanung: 4-Szenarien-Modell nach
+  Eintrittswahrscheinlichkeit
+  → Szenario 1: Vertrag unterschrieben (sicher)
+  → Szenario 2–3: in Verhandlung (abgestufte Sicherheit)
+  → Szenario 4: unsicher / frühe Phase
+- Laufende Mehrjahresprojekte bilden sichere Basis;
+  neue Opportunities werden szenariogewichtet eingestellt
+- Planungsprämisse: eher konservativ (Kosten tendenziell
+  überschätzt → positive Abweichungen häufiger als negative)
+
+TOOLS
+- Excel + DATEV (Quellsystem für Actuals, manueller Export)
+- Kein dediziertes FP&A-Tool aktuell
+- Tool-Upgrade geplant (nicht kurzfristig);
+  erwogen: Power BI, SAP (aktuell noch zu groß/teuer)
+- Integration mit vorhandenem Projektmanagementsystem
+  (Projektron) als Anforderung
+- Risiko Doppelmigration (Interimstool → später SAP)
+  bremst Entscheidung
+
+ABWEICHUNGSMANAGEMENT
+- Quartalsweise: vergangene Perioden durch Istwerte
+  ersetzen, Zukunft neu justieren
+- Budgetüberschreitungen: hart begrenzt auf Abteilungsebene
+  (Bereichsleiter haben keine Überschreitungsoption)
+- Vier-Augen-Prinzip bei der Planerstellung;
+  Annahmen werden mit Leitung diskutiert
+
+PROZESS-SCHMERZPUNKTE
+- Sehr hoher manueller Aufwand: Konto für Konto aus DATEV
+  exportieren, zusammenführen, berechnen
+- Hohe Fehleranfälligkeit durch händische Arbeit;
+  erfordert ständiges „daran denken"
+- Excel-Performance-Grenze erreicht (Tabellen zu groß
+  für Hardware)
+- Einmalige/verzerrende Positionen (z. B. einmaliger
+  Renovierungsaufwand) müssen manuell identifiziert und
+  aus der Prognose herausgerechnet werden
+- Strukturelle Kostenänderungen (z. B. neue Benefit-
+  Regelungen) können Vorjahreswerte unbrauchbar machen →
+  erfordert individuelle Prüfung jeder Position
+
+ANFORDERUNGEN AN EIN FOLGE-TOOL
+- Daten auf Knopfdruck abfragbar und strukturiert ausgebar
+- Übersichtliche Plan-Ist-Vergleiche auf aggregierter Ebene
+- Drill-through: Zusammensetzung einzelner Werte
+  transparent nachvollziehbar (analog Excel-Pivot-
+  Doppelklick)
+- Möglichkeit, verzerrende Einmalwerte zu markieren und
+  aus der Prognose auszuschließen
+- Verlässlichkeit und Nachvollziehbarkeit der Datenbasis
+- Integration in bestehende Systeme (DATEV, Projektron)

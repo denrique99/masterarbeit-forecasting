@@ -1,0 +1,46 @@
+Interview-Notizen – IP4
+Datum: März 2026
+Profil: FP&A Lead, deutsches B2B-SaaS-Unternehmen
+        (Datenschutz-Software)
+        Team: 1 Junior FP&A Manager
+        Scope: Business Partnering, Forecasting,
+        Sonderanalysen, gesamter Budgetprozess
+
+---
+
+PLANUNGSZYKLUS
+- Jahresbudget: Oktober/November, Board-/Investoren-
+  Abschluss im Dezember → gilt für Folgejahr
+- Mid-Year Budget Update (typisch Juni): bei signifikanter
+  Abweichung der Actuals; in Startups Standard, weil sich
+  Jahresplanungen schnell überholen
+- Rollierender Forecast: ergänzend, für granulare
+  Einblicke in aktuelle Performance vs. Plan
+
+UMSATZPLANUNG (SaaS-spezifisch, sehr detailliert)
+- Hybrid top-down/bottom-up:
+  → Top-down: Zielvorgabe (z. B. EUR 10 Mio. New ARR)
+  → Bottom-up: Pipeline-Modell mit Conversion-Kette:
+     MQLs → Sales Accepted Leads → SQOs → Deals
+     (jeweils mit Stage-Conversion-Rates, Time Lags,
+     ACV-Annahmen, Sales-Cycle-Länge)
+- Sales Capacity Planning:
+  → Quota × Attainment je Account Executive
+  → Ramp-up-Zeit für neue Hires bis zur vollen Quota
+  → Ziel: 120 % Overcapacity als Puffer
+     (d. h. bei 80 % Quota-Attainment wird Gesamtziel
+     trotzdem erreicht)
+- Abgleich: Erreicht Bottom-up das Top-down-Ziel?
+  Falls nicht → Identifikation, wo Conversion-
+  Steigerungen oder Kostensenkungen nötig wären
+
+TOOLING & DATENLAGE
+- Zentrales Problem: Insellösungen ohne Integration
+  (CRM, Billing-System, Accounting-System, Excel,
+  Planungstool, HR-System sprechen nicht miteinander)
+- Konsequenz: keine Single Source of Truth; mehrere
+  konkurrierende Datenstände; manuelle Aggregation
+  aus verschiedenen Quellen kostet Zeit und Effizienz
+- Trend: Cloud-basierte Integrationstools reduzieren
+  dieses Problem schrittweise; AI/Automatisierung
+  als weiterer Lösungsansatz in Entwicklung
